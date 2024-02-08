@@ -1,0 +1,149 @@
+@font-face {
+    font-family: MetaPro;
+    src: url(./Font/MetaPro-Normal.otf) format('truetype'),
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-size: 0.8rem;
+    font-family: MetaPro;
+}
+.container{
+    box-shadow: 0 0 20px rgba(0, 0, 0, .2);
+    height: 1500px;
+    display: flex;
+    width: 90%;
+    margin: 20px auto;
+    border-radius: 5px;
+    border: 15px solid #46c1ca ;
+}
+.left{
+    width: 50%;
+    /* border: 1px solid red; */
+}
+.course-con{
+    /* border: 1px solid green; */
+    display: flex;
+    width: 400px;
+    margin-left: 10px;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding: 10px;
+}
+.info-text{
+    margin-top: 10px;
+    margin-left: 20px;
+    /* border: 1px solid red; */
+    text-transform: uppercase;
+}
+.box-container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-left: 20px;
+    width: 400px;
+}
+.box{
+    width: 9px;
+    height: 10px;
+    background-color: #4FC3CA;
+}
+.boxes{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    /* margin-left: 20px; */
+}
+.boxes a{
+    text-decoration: none;
+    color: black;
+}
+.boxes a:hover{
+    color: #4FC3CA;
+}
+
+.right{
+    width: 50%;
+    /* border: 1px solid blue; */
+}
+
+.next{
+    margin-top: 30px;
+    /* margin-left: 20px; */
+}
+.course-con p{
+    color:  #006869;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.text{
+    margin-left: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+
+@media (max-width:500px) {
+    body{
+        font-size: 0.8rem;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: fit-content;
+        margin-top: 0;
+        border-radius: 0;
+    }
+    .course-con{
+        margin-left: 50px;
+        width: 1000px;
+    }
+    .box-container{
+        /* border: 1px solid green; */
+        width: 350px;
+    }
+    
+}
+
+@media (max-width:320px){
+    .container{
+        border: none;
+    }
+    .box-container{
+        width: 250px;
+        margin-left: 10px;
+    }
+    .text{
+        /* border: 1px solid red; */
+        width:250px;
+        margin-left: 30px;
+    }
+    .right .course-con{
+        display: none;
+    }
+    .next{
+        margin-top: 20px;
+    }
+}
+
+@media (max-width:768px){
+    body{
+        font-size: 1rem;
+    }
+    .container{
+        border: none;
+        height: fit-content;
+    }
+
+    .course-con{
+        width: 300px;
+        margin-left: 10px;
+    }
+    .box-container{
+        width: 300px;
+    }
+}
